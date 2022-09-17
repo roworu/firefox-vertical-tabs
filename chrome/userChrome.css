@@ -6,6 +6,10 @@
     --positionX2: absolute; /* 'absolute' for left, 'none' for right sidebar */
 }
 
+.sidebar-splitter{
+  width: 1px !important;
+}
+
 #TabsToolbar {
     visibility: collapse !important;
 }
