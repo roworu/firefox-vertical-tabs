@@ -8,3 +8,7 @@ Also set to **False** following
 ```
 extensions.pocket.enabled
 ```
+Flatpack profile location:
+```
+~/.var/app/org.mozilla.firefox/.mozilla/firefox/[profile name]
+```
