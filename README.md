@@ -1,7 +1,7 @@
-#### Result:
+### Result:
 ![image](https://user-images.githubusercontent.com/36964755/218855206-bd8e25e5-76e1-40f5-9c44-3d250534c16e.png)
 
-
+### To do so:
 #### 1) Install TST extension
 Firslty, you need to install "Tree Style Tabs" extension from here: <br/>
 https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search <br/>
