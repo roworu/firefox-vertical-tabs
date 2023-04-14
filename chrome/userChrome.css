@@ -1,13 +1,12 @@
 :root {
-    /* delay before expanding tabs, set to '0' for no delay */
     --delay: 0s;
     --transition-time: 0s;
-    --positionX1: 48px; /* '48px' for left, '0px' for right sidebar */
+    --positionX1: 48px; 
     --positionX2: absolute; /* 'absolute' for left, 'none' for right sidebar */
 }
 
 .sidebar-splitter{
-  width: 2px !important;
+  width: 3px !important;
 }
 
 #TabsToolbar {
