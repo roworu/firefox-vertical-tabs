@@ -6,7 +6,7 @@
     --positionX2: absolute; /* 'absolute' for left, 'none' for right sidebar */
     /* width of the collapsed sidebar in fullscreen mode ('1px' or '48px') */
     --fullscreen-sidebar-width: 1px;
-    /* disable TreeStyleTabs header */
+        /* disable TreeStyleTabs header */
     .sidebar-splitter{
         width: 3px !important;
       }
@@ -39,7 +39,8 @@
 }
 
 /* Linux/GTK specific styles */
-@media (-moz-gtk-csd-available) {
+@media (-moz-gtk-csd-available), 
+       (-moz-platform: linux) {
     .browser-toolbar:not(.titlebar-color){ /* Fixes wrong coloring applied with --toolbar-bgcolor by Firefox (#101) */
         background-color: transparent !important;
         box-shadow: none !important;
