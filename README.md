@@ -7,8 +7,10 @@ Firslty, you need to install "Tree Style Tabs" extension from here: <br/>
 https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search <br/>
 
 #### 2) Enable following flags
-Go to <br/>
-**about:config** <br/>
+Go to
+```
+about:config
+```
 and set to **True** following:
 ```
 toolkit.legacyUserProfileCustomizations.stylesheets
