@@ -72,7 +72,7 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 	font-family: var(--urlbar-font, 'monospace');
-	font-size: 11px;
+	font-size: 14px;
 }
 
 #urlbar {
@@ -166,7 +166,8 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 
 #TabsToolbar, .tabbrowser-tab {
 	max-height: var(--tab-min-height) !important;
-	font-size: 11px !important;
+	font-family: var(--urlbar-font, 'monospace');
+	font-size: 14px !important;
 }
 
 /* Change color of normal tabs */
@@ -177,7 +178,7 @@ tab:not([selected="true"]) {
 
 tab {
 	font-family: var(--tab-font, monospace);
-	font-weight: bold;
+	/* font-weight: bold; */
 	border: none !important;
 }
 
