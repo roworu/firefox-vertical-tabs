@@ -142,10 +142,10 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 
 /* --- DEBLOAT URLBAR ----------------------------------- */
 
+/* #urlbar-zoom-button { display: none; } */
 #identity-box { display: none; }
 #pageActionButton { display: none; }
 #pocket-button { display: none; }
-#urlbar-zoom-button { display: none; }
 #tracking-protection-icon-container { display: none !important; }
 #reader-mode-button{ display: none !important; }
 #star-button { display: none; }
@@ -215,7 +215,8 @@ tab {
 }
 
 /* hide window controls */
-.titlebar-buttonbox-container { display: none; }
+/*  .titlebar-buttonbox-container { display: none; } */
+.titlebar-buttonbox-container { margin-left: 50px !important; }
 
 /* remove titlebar spacers */
 .titlebar-spacer { display: none !important; }
@@ -243,10 +244,10 @@ tab {
 /* remove overflow scroll buttons */
 #scrollbutton-up, #scrollbutton-down { display: none !important; }
 
-/* remove new tab button */
+/* remove new tab button 
 #tabs-newtab-button {
 	margin-left: 50px !important;
-}
+}*/
 
 /* hide private browsing indicator */
 #private-browsing-indicator-with-label {
