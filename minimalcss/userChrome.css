@@ -256,12 +256,9 @@ display: none;
 
 
 
-
-.bookmark-item[container] label {
+/* Also apply font settings for bookmarks bar */
+.bookmark-item {
 	font-family: var(--urlbar-font, 'monospace');
 	font-size: 18px !important;
 
 }
-
-
-
