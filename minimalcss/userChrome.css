@@ -10,8 +10,8 @@
 	--urlbar-font: 'Jetbrains Mono';
 
 	/* try increasing if you encounter problems */
-	--urlbar-height-setting: 30px;
-	--tab-min-height: 30px !important;
+	--urlbar-height-setting: 38px;
+	--tab-min-height: 38px !important;
 
 	/* I don't recommend you touch this unless you know what you're doing */
 	--arrowpanel-menuitem-padding: 2px !important;
@@ -57,38 +57,38 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 
 /* add it back to the downloads button, otherwise it's too close to the urlbar */
 #downloads-button {
-	margin-left: 2px !important;
+margin-left: 2px !important;
 }
 
 /* add padding to the right of the last button so that it doesn't touch the edge of the window */
 #PanelUI-menu-button {
-	padding: 0px 4px 0px 0px !important;
+padding: 0px 4px 0px 0px !important;
 }
 
 #urlbar-container {
-	--urlbar-container-height: var(--urlbar-height-setting) !important;
-	margin-left: 0 !important;
-	margin-right: 0 !important;
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
-	font-family: var(--urlbar-font, 'monospace');
-	font-size: 14px;
+--urlbar-container-height: var(--urlbar-height-setting) !important;
+margin-left: 0 !important;
+margin-right: 0 !important;
+padding-top: 0 !important;
+padding-bottom: 0 !important;
+font-family: var(--urlbar-font, 'monospace');
+font-size: 18px;
 }
 
 #urlbar {
-	--urlbar-height: var(--urlbar-height-setting) !important;
-	--urlbar-toolbar-height: var(--urlbar-height-setting) !important;
-	min-height: var(--urlbar-height-setting) !important;
-	border-color: var(--lwt-toolbar-field-border-color, hsla(240,5%,5%,.25)) !important;
+--urlbar-height: var(--urlbar-height-setting) !important;
+--urlbar-toolbar-height: var(--urlbar-height-setting) !important;
+min-height: var(--urlbar-height-setting) !important;
+border-color: var(--lwt-toolbar-field-border-color, hsla(240,5%,5%,.25)) !important;
 }
 
 #urlbar-input {
-	margin-left: 0.8em !important;
-	margin-right: 0.4em !important;
+margin-left: 0.8em !important;
+margin-right: 0.4em !important;
 }
 
 #navigator-toolbox {
-	border: none !important;
+border: none !important;
 }
 
 /* keep pop-up menus from overlapping with navbar */
@@ -106,7 +106,7 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 
 /* make extension icons smaller */
 #unified-extensions-view {
-	--uei-icon-size: 16px;
+--uei-icon-size: 16px;
 }
 
 /* hide bloat */
@@ -114,7 +114,7 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 #unified-extensions-view > .panel-header,
 #unified-extensions-view > toolbarseparator,
 #unified-extensions-manage-extensions {
-	display: none !important;
+display: none !important;
 }
 
 /* add 3px padding on the top and the bottom of the box */
@@ -123,7 +123,7 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 }
 
 #unified-extensions-view .toolbarbutton-icon {
-	padding: 0 !important;
+padding: 0 !important;
 }
 
 .unified-extensions-item-contents {
@@ -132,7 +132,7 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 }
 
 #unified-extensions-panel .unified-extensions-item {
-	margin-block: 0 !important;
+margin-block: 0 !important;
 }
 
 .toolbar-menupopup :is(menu, menuitem), .subview-subheader, panelview
@@ -160,14 +160,14 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 /* --- STYLE TAB TOOLBAR -------------------------------- */
 
 #titlebar {
-	--proton-tab-block-margin: 0px !important;
-	--tab-block-margin: 0px !important;
+--proton-tab-block-margin: 0px !important;
+--tab-block-margin: 0px !important;
 }
 
 #TabsToolbar, .tabbrowser-tab {
-	max-height: var(--tab-min-height) !important;
-	font-family: var(--urlbar-font, 'monospace');
-	font-size: 14px !important;
+max-height: var(--tab-min-height) !important;
+font-family: var(--urlbar-font, 'monospace');
+font-size: 18px !important;
 }
 
 /* Change color of normal tabs */
@@ -205,13 +205,13 @@ tab {
 
 /* Tab: selected colors */
 #tabbrowser-tabs .tabbrowser-tab[selected] .tab-content {
-	background: var(--tab-active-bg-color) !important;
-	color: var(--identity-icon-color, var(--tab-active-fg-fallback-color)) !important;
+background: var(--tab-active-bg-color) !important;
+color: var(--identity-icon-color, var(--tab-active-fg-fallback-color)) !important;
 }
 
 /* Tab: hovered colors */
 #tabbrowser-tabs .tabbrowser-tab:hover:not([selected]) .tab-content {
-	background: var(--tab-active-bg-color) !important;
+background: var(--tab-active-bg-color) !important;
 }
 
 /* hide window controls */
@@ -223,7 +223,7 @@ tab {
 
 /* disable tab shadow */
 #tabbrowser-tabs:not([noshadowfortests]) .tab-background:is([selected], [multiselected]) {
-    box-shadow: none !important;
+box-shadow: none !important;
 }
 
 /* remove dark space between pinned tab and first non-pinned tab */
@@ -238,20 +238,30 @@ tab {
 
 /* fix displaying of pinned tabs on overflow */
 #tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
-	height: var(--tab-min-height) !important;
+height: var(--tab-min-height) !important;
 }
 
 /* remove overflow scroll buttons */
 #scrollbutton-up, #scrollbutton-down { display: none !important; }
 
-/* remove new tab button 
-#tabs-newtab-button {
-	margin-left: 50px !important;
-}*/
+/* remove new tab button
+ * #tabs-newtab-button {
+ *	margin-left: 50px !important;
+ * }*/
 
 /* hide private browsing indicator */
 #private-browsing-indicator-with-label {
-	display: none;
+display: none;
 }
+
+
+
+
+.bookmark-item[container] label {
+	font-family: var(--urlbar-font, 'monospace');
+	font-size: 18px !important;
+
+}
+
 
 
