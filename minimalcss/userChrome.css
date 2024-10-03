@@ -42,7 +42,8 @@ menupopup > #context-sep-navigation { display: none !important; }
 /* #back-button { display: none; } */
 #back-button { margin-left: 5px !important; }
 #forward-button { display: none; }
-#reload-button { display: none; }
+/* #reload-button { display: none; } */
+#reload-button { margin-left: 5px !important; }
 #stop-button { display: none; }
 #home-button { display: none; }
 #library-button { display: none; }
