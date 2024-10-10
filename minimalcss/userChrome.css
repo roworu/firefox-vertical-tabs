@@ -97,9 +97,12 @@ menupopup > #context-sep-navigation {
 #forward-button {
     display: none;
 }
+/* #reload-button { display: none;} */
+
 #reload-button {
-    display: none;
+    margin-left: 5px !important;
 }
+
 #stop-button {
     display: none;
 }
@@ -285,8 +288,6 @@ tab:not([selected="true"]) {
 
 tab {
     font-family: var(--tab-font, "monospace") !important;
-    /* font-weight: bold; */
-    /* border: none !important; */
 }
 
 /* safari style tab width */
@@ -326,12 +327,6 @@ tab {
     background: var(--tab-active-bg-color) !important;
 }
 
-/* hide window controls */
-/*  .titlebar-buttonbox-container { display: none; } */
-.titlebar-buttonbox-container {
-    margin-right: 50px !important;
-}
-
 /* For Windows and Linux, margin on the left */
 @media (-moz-platform: windows), (-moz-platform: linux) {
     .titlebar-buttonbox-container {
@@ -347,11 +342,6 @@ tab {
         margin-left: 0 !important;
     }
 }
-
-/* remove new tab button
- * #tabs-newtab-button {
- *	margin-left: 50px !important;
- * }*/
 
 /* remove titlebar spacers */
 .titlebar-spacer {
