@@ -332,6 +332,27 @@ tab {
     margin-right: 50px !important;
 }
 
+/* For Windows and Linux, margin on the left */
+@media (-moz-platform: windows), (-moz-platform: linux) {
+    .titlebar-buttonbox-container {
+        margin-left: 50px !important;
+        margin-right: 0 !important;
+    }
+}
+
+/* For MacOS, margin on the right */
+@media (-moz-platform: macos) {
+    .titlebar-buttonbox-container {
+        margin-right: 50px !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* remove new tab button
+ * #tabs-newtab-button {
+ *	margin-left: 50px !important;
+ * }*/
+
 /* remove titlebar spacers */
 .titlebar-spacer {
     display: none !important;
@@ -366,11 +387,6 @@ tab {
     display: none !important;
 }
 
-/* remove new tab button
- * #tabs-newtab-button {
- *	margin-left: 50px !important;
- * }*/
-
 /* hide private browsing indicator */
 #private-browsing-indicator-with-label {
     display: none;
@@ -379,5 +395,5 @@ tab {
 /* Also apply font settings for bookmarks bar */
 .bookmark-item {
     font-family: var(--urlbar-font, "monospace") !important;
-    font-size: var(--font-size) !important;
+    font-size: 18px !important;
 }
