@@ -6,7 +6,7 @@ about:config
 and set to **True** following:
 ```
 sidebar.verticalTabs
-
+toolkit.legacyUserProfileCustomizations.stylesheets
 sidebar.revamp
 ```
 #### 2) Apply css file
