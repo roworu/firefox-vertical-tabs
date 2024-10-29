@@ -1,5 +1,10 @@
-:root {
+/* dark blank tab */
+@-moz-document url(about:blank), url(about:newtab) {
+    #newtab-window, html:not(#ublock0-epicker) {
+        background: #222 !important;
+    }
 }
+
 
 /* macOS specific styles */
 @media (-moz-platform: macos) {
@@ -267,29 +272,28 @@
     }
 }
 
-sidebar-main[expanded] {
-    width: 200px !important;
-    max-width: 200px !important;
-}
+
 
 sidebar-main[expanded] div#vertical-tabs {
     width: 185px !important;
     max-width: 185px !important;
 }
 
-#tabbrowser-tabs[orient="vertical"] {
-    display: flex;
-    flex-direction: column;
+sidebar-main[expanded] div#scrollbox {
+    width: 185px !important;
+    max-width: 185px !important;
 }
 
-/* Make sure tabs scrollbox (where the tabs live) stays at the top */
-#scrollbox {
-    order: 1; /* Tabs come first */
+sidebar-main[expanded] scrollbox {
+    width: 185px !important;
+    max-width: 185px !important;
 }
 
-/* Ensure the newtab button container comes right after the tabs */
-#newtab-button-container {
-    order: 2; /* New tab button comes after the tabs, but not at the bottom */
+tab-content {
+
+    width: 185px !important;
+    max-width: 185px !important;
 }
 
-/* Any other elements can follow after */
+
+
